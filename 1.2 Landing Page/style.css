@@ -1,0 +1,174 @@
+html, body {
+    overflow-x: hidden !important;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 0;
+    z-index: 1;
+}
+
+header > a {
+    margin-bottom: 0 !important;
+}
+
+.mds {
+    font-family: 'Kalam', cursive;
+    margin: 0;
+    padding: 5px;
+}
+
+.nav-item .nav-link {
+    color: black;
+    padding: 7px 12px;
+    font-size: 14px;
+}
+
+.active {
+    background-color: #000000 !important;
+    color: white !important;
+}
+
+.nav {
+    font-size: 15px;
+}
+
+.cover-container {
+    background: linear-gradient(to bottom, rgba(198, 154, 93, 0.8) 0%, rgba(58, 94, 112, 0.8) 100%), url(./images/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+main {
+    padding: 300px;
+}
+
+.text-back {
+    border-radius: 10px;
+}
+
+.text-back>h1,
+p {
+    padding: 5px 15px;
+}
+
+.lead {
+    font-weight: 500;
+    display: flex;
+}
+
+.lead>a {
+    align-items: end;
+}
+
+.tagline-para {
+    font-style: italic;
+    text-align: justify;
+}
+.couple-image {
+    border-radius: 10px;
+}
+
+#features {
+    text-align: justify;
+}
+
+.owner {
+    border-radius: 50%;
+}
+
+.apply-border {
+    border: 3px solid black;
+}
+.owner-info {
+    font-family: 'Kalam', cursive;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding-left: 20px;
+    }
+
+    .cover-container {
+        background: linear-gradient(to bottom, rgba(198, 154, 93, 0.8) 0%, rgba(58, 94, 112, 0.8) 100%), url(./images/back-mob.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+    .mds {
+        font-size: 15px !important;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .mds-svg {
+        height: 20px;
+        width: 20px;
+    }
+
+
+    .nav, .nav-item .nav-link {
+        font-size: small;
+        padding: 5px 7px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 428px) {
+
+    .mds {
+        font-size: 14px !important;
+    }
+
+    .mds-svg {
+        height: 15px;
+        width: 15px;
+    }
+
+
+    .nav, .nav-item .nav-link {
+        font-size: smaller;
+        padding: 3px 5px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .mds {
+        font-size: 12px !important;
+    }
+
+    .mds-svg {
+        height: 13px;
+        width: 13px;
+    }
+
+
+    .nav, .nav-item .nav-link {
+        font-size: x-small;
+        padding: 2px 4px;
+        margin: 0;
+    }
+}
